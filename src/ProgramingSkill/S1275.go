@@ -1,12 +1,18 @@
 package programingskill
 
+import (
+	"strconv"
+)
+
 func S1275(moves [][]int) string {
 	board := [][]string{{"-", "-", "-"}, {"-", "-", "-"}, {"-", "-", "-"}}
-	y := "0"
+
 	for i, v := range moves {
 		if i < 4 {
+			y := strconv.Itoa(i % 2)
 			board[v[0]][v[1]] = y
 		} else {
+			y := strconv.Itoa(i % 2)
 			board[v[0]][v[1]] = y
 			for j := 0; j < 3; j++ {
 				if board[j][1] == board[j][2] && board[j][1] == board[j][0] && board[j][0] != "-" {
@@ -23,15 +29,10 @@ func S1275(moves [][]int) string {
 				return summery(y)
 			}
 		}
-		if y == "0" {
-			y = "1"
-		} else {
-			y = "0"
-		}
 	}
-	if y == "1" && len(moves) < 9 {
+	if len(moves)<9{
 		return "Pending"
-	} else {
+	} else{
 		return "Draw"
 	}
 

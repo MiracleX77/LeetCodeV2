@@ -5,12 +5,8 @@ import (
 )
 
 func main() {
-	moves := [][]int{
-		{0, 0},
-		{2, 0},
-		{1, 1},
-		{2, 1},
-		{2, 2},
+	moves := []int{
+		1000, 2000, 3000,
 	}
-	programingskill.S1275(moves)
+	programingskill.S1491(moves)
 }
