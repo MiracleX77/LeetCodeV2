@@ -6,7 +6,7 @@ import (
 
 func main() {
 	moves := []int{
-		1000, 2000, 3000,
+		1000, 2000, 3000, 400,
 	}
 	programingskill.S1491(moves)
 }
