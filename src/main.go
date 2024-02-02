@@ -1,12 +1,16 @@
 package main
 
 import (
-	programingskill "mix/ProgramingSkill"
+	// programingskill "mix/ProgramingSkill"
+	feb2024 "mix/Feb_2024"
 )
 
 func main() {
-	moves := []int{
-		1000, 2000, 3000, 400,
-	}
-	programingskill.S1491(moves)
+	// moves := [][]int{
+	// 	{1, 2, 3},
+	// 	{4, 5, 6},
+	// 	{7, 8, 9},
+	// }
+	// programingskill.S1523(3, 7)
+	feb2024.S1291(100, 1000)
 }
