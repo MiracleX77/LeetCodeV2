@@ -1,8 +1,9 @@
 package main
 
 import (
-	// programingskill "mix/ProgramingSkill"
-	feb2024 "mix/Feb_2024"
+	"fmt"
+	programingskill "mix/ProgramingSkill"
+	//feb2024 "mix/Feb_2024"
 )
 
 func main() {
@@ -12,5 +13,9 @@ func main() {
 	// 	{7, 8, 9},
 	// }
 	// programingskill.S1523(3, 7)
-	feb2024.S1291(372591426, 841554424)
+	bills := []int{
+		5, 5, 10, 10, 20,
+	}
+	result := programingskill.S860(bills)
+	fmt.Println(result)
 }
