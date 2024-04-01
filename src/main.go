@@ -13,9 +13,12 @@ func main() {
 	// 	{7, 8, 9},
 	// }
 	// programingskill.S1523(3, 7)
-	bills := []int{
-		5, 5, 10, 10, 20,
+	// bills := []int{
+	// 	5, 5, 10, 10, 20,
+	// }
+	coordinates := [][]int{
+		{-3, -2}, {-1, -2}, {2, -2}, {-2, -2}, {0, -2},
 	}
-	result := programingskill.S860(bills)
+	result := programingskill.S1232(coordinates)
 	fmt.Println(result)
 }
