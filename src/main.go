@@ -16,9 +16,12 @@ func main() {
 	// bills := []int{
 	// 	5, 5, 10, 10, 20,
 	// }
-	coordinates := [][]int{
-		{-3, -2}, {-1, -2}, {2, -2}, {-2, -2}, {0, -2},
-	}
-	result := programingskill.S1232(coordinates)
+	// coordinates := [][]int{
+	// 	{-3, -2}, {-1, -2}, {2, -2}, {-2, -2}, {0, -2},
+	// }
+	// result := programingskill.S1232(coordinates)
+	a := "11"
+	b := "1"
+	result := programingskill.S67(a, b)
 	fmt.Println(result)
 }
