@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	nums1 := []int{
@@ -10,12 +13,21 @@ func main() {
 }
 
 func majorityElement(nums []int) int {
-	freqMap := make(map[int]int)
+	sort.Ints(nums)
+	half := float32(len(nums)) / 2.0
+	count := 0
+	corrent_num := -1
 
-	// นับความถี่ของตัวเลขในอาร์เรย์
 	for _, num := range nums {
-		freqMap[num]++
+		if num != corrent_num {
+			corrent_num = num
+			count = 1
+		} else {
+			count++
+		}
+		if float32(count) >= half {
+			return corrent_num
+		}
 	}
-	fmt.Println(freqMap[2])
-	return 0
+	return corrent_num
 }
